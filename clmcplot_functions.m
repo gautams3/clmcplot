@@ -1065,6 +1065,8 @@ if strcmp(MRDS.legend_pos,'NorthEast'),
   MRDS.legend_pos = 'NorthWest';
 elseif strcmp(MRDS.legend_pos,'NorthWest'),
   MRDS.legend_pos = 'off';
+elseif strcmp(MRDS.legend_pos,'off'),
+  MRDS.legend_pos = 'NorthEast';
 else
   MRDS.legend_pos = 'NorthEast';
 end
